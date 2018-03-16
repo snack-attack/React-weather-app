@@ -11,8 +11,6 @@ export default class Forecast extends React.Component {
             { "city": "London", "day": "Tuesday", "forecast": "cloudy"}
         ] 
 
-        const contentKeys = Object.keys(list);
-
         let renderCity = (city, img, forecast) => {
             return (
                 <div>

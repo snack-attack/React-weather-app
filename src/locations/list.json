@@ -1,0 +1,76 @@
+{
+    "Bristol": [
+        {"day": "Monday", "forecast":"sunny", "high": "14", "low": "9"},
+        {"day": "Tuesday", "forecast":"cloudy", "high": "13", "low": "9"},
+        {"day": "Wednesday", "forecast":"rainy", "high": "12", "low": "7"},
+        {"day": "Thursday", "forecast":"snowy", "high": "-1", "low": "-9"},
+        {"day": "Friday", "forecast":"sunny", "high": "21", "low": "9"}
+    ],
+
+    "London": [
+        {
+            "day": "Monday",
+            "forecast": "sunny",
+            "high": "14",
+            "low": "9"
+        },
+        {
+            "day": "Tuesday",
+            "forecast": "cloudy",
+            "high": "13",
+            "low": "9"
+        },
+        {
+            "day": "Wednesday",
+            "forecast": "rainy",
+            "high": "12",
+            "low": "7"
+        },
+        {
+            "day": "Thursday",
+            "forecast": "snowy",
+            "high": "-1",
+            "low": "-9"
+        },
+        {
+            "day": "Friday",
+            "forecast": "sunny",
+            "high": "21",
+            "low": "9"
+        }
+    ],
+
+
+    "Bath": [
+        {
+            "day": "Monday",
+            "forecast": "sunny",
+            "high": "14",
+            "low": "9"
+        },
+        {
+            "day": "Tuesday",
+            "forecast": "snowy",
+            "high": "13",
+            "low": "9"
+        },
+        {
+            "day": "Wednesday",
+            "forecast": "sunny",
+            "high": "12",
+            "low": "7"
+        },
+        {
+            "day": "Thursday",
+            "forecast": "rainy",
+            "high": "-1",
+            "low": "-9"
+        },
+        {
+            "day": "Friday",
+            "forecast": "snowy",
+            "high": "21",
+            "low": "9"
+        }
+    ]
+}

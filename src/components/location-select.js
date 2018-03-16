@@ -8,6 +8,17 @@ export default class LocationSelect extends Component {
         super(props);
     }
 
+    //handleClick needs to be implemented below
+    handleClick = () => {
+        import('./forecast-display')
+            .then(({ Forecast }) => {
+                // Display forecast of selected city
+            })
+            .catch(err => {
+                // Handle failure
+            });
+    };
+
     render () {
 
 
@@ -15,7 +26,7 @@ export default class LocationSelect extends Component {
             <section className="section" >
                 <Title size={3}>My Saved Locations</Title>
                 <div className="columns">
-                    
+                {/* List various cities as buttons -> then ternary operator to handle conditional rendering */}
                 </div>
             </section>
         );

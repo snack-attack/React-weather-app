@@ -19,6 +19,7 @@ export default class App extends Component {
           </div>
         </div>
         <div className="container is-widescreen">
+          {/* Turn this into a ternary that conditionally renders Forecast or LocationSelect component based on click event */}
           {<Forecast />}
         </div>
       </div>

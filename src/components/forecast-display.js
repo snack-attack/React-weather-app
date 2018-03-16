@@ -34,7 +34,6 @@ export default class Forecast extends React.Component {
             <section>
                 {renderCity('Bristol')}
                 {renderCity('London')}
-                <cloudyIcon />
             </section>
         )
     }

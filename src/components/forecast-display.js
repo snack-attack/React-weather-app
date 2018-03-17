@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from './title';
-import cloudyIcon from '../assets/cloudy'
+import { CloudyIcon } from '../assets/cloudy'
 // import locationList from '../locations/list.json';
 
 export default class Forecast extends React.Component {
@@ -14,16 +14,20 @@ export default class Forecast extends React.Component {
         let renderCity = (city, img, forecast) => {
             return (
                 <div>
-                    <div>
-                        <Title size={3}>{ city }</Title>
-                    </div>
-                    <div>
-                        {/* //need to get the svg icon to display */}
-                        <cloudyIcon />
-                    </div>
-                    <div>
-                        {/* need to map the list array to display the forecast for each city */}
-                    </div>
+                    <section>
+                        <div>
+                            <Title size={3}>{ city }</Title>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            {/* //need to get the svg icon to display */}
+                            <CloudyIcon />
+                        </div>
+                        <div>
+                            {/* need to map the list array to display the forecast for each city */}
+                        </div>
+                    </section>
                 </div>
             )
         };

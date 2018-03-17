@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function cloudyIcon() {
+export function CloudyIcon() {
 	return (
 		<svg style={{height: '36px', width: '36px'}} >
 			<path fill="#FFFFFF" d="M28.004,14.506c0,0.552,0.443,1,1.01,1h1.98c0.558,0,1.01-0.444,1.01-1c0-0.553-0.443-1-1.01-1    h-1.98C28.456,13.506,28.004,13.949,28.004,14.506z" />		

@@ -6,8 +6,8 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
+.saved-city {
+  background-color: green;
   padding: 20px;
   color: white;
 }
@@ -21,3 +21,7 @@
   font-size: 1.1em;
 }
 
+.daily-forecast-card {
+  border-radius: 3px;
+  border-color: red;
+}

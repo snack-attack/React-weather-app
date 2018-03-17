@@ -1,36 +1,47 @@
 import React, { Component } from 'react';
 import Title from './title';
 import { CloudyIcon, RainyIcon, SnowyIcon, SunnyIcon } from './icons'
-import locationList from '../locations/list.json';
+import locationList from '../locations/data.json';
 
 export default class Forecast extends React.Component {
     constructor(props) {
         super(props);
     }
 
+    // Add a function to click on a day's forecast to be shown its hourly forecast
+
     render () {
         let renderCity = (city, forecast) => {
             return (
                 <div>
                     <div>
-                        <Title size={3}>{ city }</Title>
+                        <Title size={3} className="saved-city">{ city }</Title>
                     </div>
-                    <div className="dayForecast">
+                    <div className="">
                         {/* need to map the list array to Display the day/img/forecast */}
-                        {/* //need to get the svg icon to display based on forecast key in json data */}
-                        <SunnyIcon />
-                        {/* high & low temps here */}
+                        <div className="">
+                            {forecast.map((day, i) => renderForecast(city, day, i))}
+                        </div>
                     </div>
                 </div>
             )
         };
 
-        // Add a function to click on a day's forecast to be shown its hourly forecast
+        let renderForecast = (city, day, index) => {
+            return (
+                <a key={index} className="column is-one-fifth">
+                    {/* figure out how to access day key in json data */}
+                    <Title size={4}>Monday</ Title> 
+                    <CloudyIcon />
+                    {/* high & low temps will display here */}
+                </a>
+            )
+        };
 
         return (
             <section>
                 <Title size={2}>Your Saved Locations</Title>
-                <div className="columns">
+                <div className="" style={{padding: "30px"}}>
                     {renderCity('Bristol', locationList.bristol)}
                     {renderCity('London', locationList.london)}
                     {renderCity('Bath', locationList.bath)}

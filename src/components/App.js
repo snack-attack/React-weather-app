@@ -14,8 +14,8 @@ export default class App extends Component {
     return (
       <div>
         <div className="header">
-          <div className="header-display">
-            <Title className="navbar-item" size={2}>Weekly Weather Forecast</Title>
+          <div className="">
+            <Title className="navbar-item" size={1}>Weekly Weather Forecast</Title>
           </div>
         </div>
         <div className="container is-widescreen">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from './title';
-import locationList from '../locations/list.json';
+import locationList from '../locations/data.json';
 
 
 export default class LocationSelect extends Component {

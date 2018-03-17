@@ -1,5 +1,5 @@
 {
-    "Bristol": [
+    "bristol": [
         {"day": "Monday", "forecast":"sunny", "high": "14", "low": "9"},
         {"day": "Tuesday", "forecast":"cloudy", "high": "13", "low": "9"},
         {"day": "Wednesday", "forecast":"rainy", "high": "12", "low": "7"},
@@ -7,7 +7,7 @@
         {"day": "Friday", "forecast":"sunny", "high": "21", "low": "9"}
     ],
 
-    "London": [
+    "london": [
         {
             "day": "Monday",
             "forecast": "sunny",
@@ -41,7 +41,7 @@
     ],
 
 
-    "Bath": [
+    "bath": [
         {
             "day": "Monday",
             "forecast": "sunny",

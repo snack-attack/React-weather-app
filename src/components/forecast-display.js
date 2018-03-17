@@ -11,7 +11,7 @@ export default class Forecast extends React.Component {
     // Add a function to click on a day's forecast to be shown its hourly forecast
 
     render () {
-        let renderCity = (city, forecast) => {
+        let renderCity = (city, dayforecast) => {
             return (
                 <div>
                     <div>
@@ -20,18 +20,18 @@ export default class Forecast extends React.Component {
                     <div className="">
                         {/* need to map the list array to Display the day/img/forecast */}
                         <div className="">
-                            {forecast.map((day, i) => renderForecast(city, day, i))}
+                            {dayforecast.map((item, i) => renderForecast(city, item, i))}
                         </div>
                     </div>
                 </div>
             )
         };
 
-        let renderForecast = (city, day, index) => {
+        let renderForecast = (city, item, index) => {
             return (
                 <a key={index} className="column is-one-fifth">
                     {/* figure out how to access day key in json data */}
-                    <Title size={4}>Monday</ Title> 
+                    <Title size={4}>{ item.day }</ Title> 
                     <CloudyIcon />
                     {/* high & low temps will display here */}
                 </a>

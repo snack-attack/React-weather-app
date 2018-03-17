@@ -24,9 +24,9 @@ export default class LocationSelect extends Component {
 
         return (
             <section className="section" >
-                <Title size={3}>My Saved Locations</Title>
+                <Title size={3}>Add a new location</Title>
                 <div className="columns">
-                {/* List various cities as buttons -> then ternary operator to handle conditional rendering */}
+                {/* Add an input and allow api data fetch */}
                 </div>
             </section>
         );

@@ -32,11 +32,24 @@ export default class Forecast extends React.Component {
                 <a key={index} className="column is-one-fifth">
                     {/* figure out how to access day key in json data */}
                     <Title size={4}>{ item.day }</ Title> 
-                    <CloudyIcon />
+                    { renderSwitch(item.forecast) }
                     {/* high & low temps will display here */}
                 </a>
             )
         };
+
+        let renderSwitch = (param) => {
+            switch(param) {
+                case 'sunny':
+                    return <SunnyIcon />;
+                case 'snowy':
+                    return <SnowyIcon />;
+                case 'cloudy':
+                    return <CloudyIcon />;
+                case 'rainy':
+                    return <RainyIcon />;
+            }
+        }
 
         return (
             <section>

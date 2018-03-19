@@ -18,7 +18,6 @@ export default class Forecast extends React.Component {
                         <Title size={3} className="saved-city">{ city }</Title>
                     </div>
                     <div className="">
-                        {/* need to map the list array to Display the day/img/forecast */}
                         <div className="">
                             {dayforecast.map((item, i) => renderForecast(city, item, i))}
                         </div>
@@ -29,10 +28,11 @@ export default class Forecast extends React.Component {
 
         let renderForecast = (city, item, index) => {
             return (
-                <a key={index} className="column is-one-fifth">
+                <a key={index} className="column is-one-fifth daily-display">
                     <Title size={4}>{ item.day }</ Title> 
                     { renderSwitch(item.forecast) }
-                    {/* high & low temps will display here */}
+                    <p>High: { item.high} </p>
+                    <p>Low: {item.low}</p>
                 </a>
             )
         };
@@ -58,7 +58,9 @@ export default class Forecast extends React.Component {
                     {renderCity('London', locationList.london)}
                     {renderCity('Bath', locationList.bath)}
                 </div>
-                {/* Put a input here to add a new location which then renders location-select component */}
+                <Title size={3}>Add a new location</Title>
+                {/* <LocationSelect /> */}
+                {/* Add an input here to add a new location which then renders location-select component */}
             </section>
         )
     }

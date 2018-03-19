@@ -30,7 +30,6 @@ export default class Forecast extends React.Component {
         let renderForecast = (city, item, index) => {
             return (
                 <a key={index} className="column is-one-fifth">
-                    {/* figure out how to access day key in json data */}
                     <Title size={4}>{ item.day }</ Title> 
                     { renderSwitch(item.forecast) }
                     {/* high & low temps will display here */}

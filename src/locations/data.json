@@ -10,7 +10,7 @@
     "london": [
         {
             "day": "Monday",
-            "forecast": "sunny",
+            "forecast": "cloudy",
             "high": "14",
             "low": "9"
         },
@@ -44,7 +44,7 @@
     "bath": [
         {
             "day": "Monday",
-            "forecast": "sunny",
+            "forecast": "rainy",
             "high": "14",
             "low": "9"
         },

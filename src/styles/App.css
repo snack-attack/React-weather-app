@@ -25,3 +25,8 @@
   border-radius: 3px;
   border-color: red;
 }
+
+.FancyBorder {
+  border-radius: 3em;
+  border-color: white;
+}

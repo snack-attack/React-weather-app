@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from './title';
 import { CloudyIcon, RainyIcon, SnowyIcon, SunnyIcon } from './icons'
 import locationList from '../locations/data.json';
+import Toggle from './day-view';
 
 export default class Forecast extends React.Component {
     constructor(props) {
@@ -30,15 +31,15 @@ export default class Forecast extends React.Component {
             return (
                 <a key={index} className="column is-one-fifth daily-display">
                     <Title size={4}>{ item.day }</ Title> 
-                    { renderSwitch(item.forecast) }
+                    { renderIcon(item.forecast) }
                     <p>High: { item.high} </p>
                     <p>Low: {item.low}</p>
                 </a>
             )
         };
 
-        let renderSwitch = (param) => {
-            switch(param) {
+        let renderIcon = (forecast) => {
+            switch(forecast) {
                 case 'sunny':
                     return <SunnyIcon />;
                 case 'snowy':
@@ -59,7 +60,7 @@ export default class Forecast extends React.Component {
                     {renderCity('Bath', locationList.bath)}
                 </div>
                 <Title size={3}>Add a new location</Title>
-                {/* <LocationSelect /> */}
+                <Toggle />
                 {/* Add an input here to add a new location which then renders location-select component */}
             </section>
         )
